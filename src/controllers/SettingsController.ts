@@ -8,14 +8,14 @@ class SettingsController {
 
     const settingsRepository = getCustomRepository(SettingsRepository);
 
-    const settings = settingsRepository.create({
+    const setting = settingsRepository.create({
       chat,
       username,
     });
 
-    await settingsRepository.save(settings);
+    await settingsRepository.save(setting);
 
-    return response.json(settings);
+    return response.json(setting);
   }
 }
 
