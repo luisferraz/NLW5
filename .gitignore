@@ -1,3 +1,3 @@
 node_modules
 Codigos
-*.sqlite
+**/database.sqlite
